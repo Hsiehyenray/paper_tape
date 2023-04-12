@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>會員</title>
+  <link rel="stylesheet" href="css/Untitled-7.css">
+  <link rel="stylesheet" href="css/Untitled-8.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<style type="text/css">
+  @import url("css/text.css");
+</style>
+
+<body>
+  <div class="w3-top w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="index.html" class="w3-bar-item w3-button"><b>PT</b> Paper tape </a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="product.html" class="w3-bar-item w3-button">商品</a>
+      <a href="QA.html" class="w3-bar-item w3-button">Q & A</a>
+      <a href="car.html" class="w3-bar-item w3-button">購物車</a>
+      <a href="member.html" class="w3-bar-item w3-button">會員</a>
+      <a href="login.html" class="w3-bar-item w3-button">登入</a>
+      <input type="submit" class="w3-bar-item w3-button" value="登出"></input>
+    </div>
+  </div>
+  <div>
+    <center> <img src="pic/avatar (1).png" style="width: 150px; vertical-align: middle;padding-top: 100px;">
+    </center>
+  </div>
+  <div class="pro-body">
+    <div class="product-root">
+      <div class="product-botton">
+        <nav>
+          <a href="#" onclick="clickhere(this)" value="myself">個人資料</a>
+          <a href="#" onclick="clickhere(this)" value="bought">購買記錄</a>
+          <a href="#" onclick="clickhere(this)" value="line">評價記錄</a>
+        </nav>
+      </div>
+      <center>
+        <div class="r-p">
+          <div id="myself" class="r-p-item-1">
+            <div class="my-my-m">個人資料</div>
+            <div>
+              <div>
+
+                <form method="POST" action="back/update.jsp">
+                  <ul style=" list-style-type: none">
+                    <li>
+                      <input type="text" name="account" size="20" placeholder="帳號" width="8" class="my-text"
+                        autocomplete="off" />
+                    </li>
+                    <li>
+                      <input type="text" name="password" size="20" placeholder="密碼" width="8" class="my-text"
+                        autocomplete="off" />
+                    </li>
+                    <li>
+                      <input type="text" name="name" size="20" placeholder="姓名" width="8" class="my-text"
+                        autocomplete="off" />
+                    </li>
+                    <li>
+                      <input type="text" name="email" size="30" placeholder="信箱：" class="my-text" autocomplete="off" />
+                    </li>
+                  </ul>
+                  <button type="submit" class="my-button">修改個資</button>
+                  <input type="hidden" name="action" value="cancel">
+                </form>
+              </div>
+            </div>
+          </div>
+          <div id="bought" class="r-p-item">
+
+            <div class="shop-body">
+              <div class="shop-title">購買記錄</div>
+              <hr>
+              <div class="s-b-t">
+                <div class="shop-body-root">
+                  <div class="shop-body-root-left">
+                    <img src="pic/16.JPG" class="shop-pic">
+                  </div>
+                  <div class="shop-body-root-right">
+                    <div class="shop-p-name">橘</div>
+                    <div class="shop-p-name">$200</div>
+                    <div class="shop-p-num">數量:</div>
+                  </div>
+                  <div class="shop-p-num">
+                    <div>1</div>
+                  </div>
+                  <div class="shop-p-total">$200</div>
+                  <div class="shop-p-bot">
+                  </div>
+                </div>
+                <div class="shop-body-root">
+                  <div class="shop-body-root-left">
+                    <img src="pic/17.JPG" class="shop-pic">
+                  </div>
+                  <div class="shop-body-root-right">
+                    <div class="shop-p-name">12/25</div>
+                    <div class="shop-p-name">$100</div>
+                    <div class="shop-p-num">數量:</div>
+                  </div>
+                  <div class="shop-p-num">
+                    <div>1</div>
+                  </div>
+                  <div class="shop-p-total">$100</div>
+                  <div class="shop-p-bot">
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div id="line" class="r-p-item">
+            <div>評價記錄</div>
+            <div class="w3-container w3-white w3-margin w3-padding-large">
+              <div class="w3-center">
+                <h5>評價時間, <span class="w3-opacity">April 13, 2020</span></h5>
+              </div>
+
+              <div class="w3-justify">
+                <p>買家A:<strong>王同學</strong> </p>
+                <img src="pic/avatar.png" alt="q1" style="width:15%" class="w3-padding-16">
+                <p>
+                  膠帶好好看！！已經開始用了！
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </center>
+    </div>
+  </div>
+
+  <script>
+    var arraypro = ["myself", "bought", "line"]
+
+    function clickhere(x) {
+      arraypro.forEach(e => {
+        document.getElementById(e).style.display = "none";
+      });
+
+      var y = x.attributes.value.nodeValue;
+      document.getElementById(y).style.display = "block";
+    }
+  </script>
+</body>
+
+</html>

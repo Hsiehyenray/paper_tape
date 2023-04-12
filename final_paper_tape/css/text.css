@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.roots{
+  overflow: hidden;}
+  
+.image {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.my-my-m {
+
+  font-size: 60px;
+  margin-top: 10px;
+  /*標題*/
+}
+
+form {
+  font-style: 標楷體;
+  padding-top: 67px;
+}
+
+.my-text {   
+  font-size: 16px;
+  background-color: rgb(247, 222, 155);/*color*/
+  padding: 20px 8px;
+  margin-bottom: 10px;
+  display: inline;
+  border-radius: 5px;
+  border: rgb(0, 0, 0) solid 3px;
+  transition: all 0.5s ease;
+  /*表單填寫列樣式*/
+}
+
+.my-sex {
+  margin-top: 10px;
+  color: rgb(10, 10, 10);
+  /*性別欄控制*/
+}
+
+.my-button {
+  display: inline-block;
+  margin: 20px 0 0 0;
+  padding: 10px 8px;
+  background-color: #f9b82c;
+  font-size: 14px;
+  font-weight: bold;
+  color:black;
+  border: 1px solid transparent;
+  outline: 0;
+  cursor: pointer;
+  word-break: keep-all;
+  -webkit-appearance: none;
+  border-radius: 5px;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+  min-width: 100px;
+  position: relative;
+
+  /*按鈕*/
+}

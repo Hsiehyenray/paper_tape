@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的購物車</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="css/Untitled-8.css">
+</head>
+
+
+<body>
+  <div class="w3-top w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="index.html" class="w3-bar-item w3-button"><b>PT</b> Paper tape </a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="product.html" class="w3-bar-item w3-button">商品</a>
+      <a href="QA.html" class="w3-bar-item w3-button">Q & A</a>
+      <a href="car.html" class="w3-bar-item w3-button">購物車</a>
+      <a href="member.html" class="w3-bar-item w3-button">會員</a>
+      <a href="login.html" class="w3-bar-item w3-button">登入</a>
+      <input type="submit" class="w3-bar-item w3-button" value="登出"></input>
+    </div>
+  </div>
+  <!--購物車-->
+
+  <div class="shop-body">
+    <div class="shop-title">收藏</div>
+    <hr>
+    <div class="s-b-t">
+      <form class="register" action="../assets/jsp/memberadd.jsp" method="post">
+        <tr>
+          <div class="shop-body-root">
+            <div class="shop-body-root-left">
+              <td><img src="pic/16.JPG" class="shop-pic"></td>
+            </div>
+            <div class="shop-body-root-right">
+              <div class="shop-p-name">
+                <td>橘</td>
+              </div>
+              <div class="shop-p-name">
+                <rd>$230.00</rd>
+              </div>
+              <div class="shop-p-num">
+                <td>數量:</td>
+              </div>
+            </div>
+            <div class="shop-p-num">
+              <td> <input type="number" max="10" min="1" value="1"></td>
+            </div>
+            <div class="shop-p-total">
+              <td>$230.00</td>
+            </div>
+            <div class="shop-p-bot">
+              <td> <button class="w3-button w3-black">加入購物車</button></td>
+            </div>
+          </div>
+        </tr>
+      </form>
+      <form class="register" action="../assets/jsp/memberadd.jsp" method="post">
+        <tr>
+          <div class="shop-body-root">
+            <div class="shop-body-root-left">
+              <td><img src="pic/18.JPG" class="shop-pic"></td>
+            </div>
+            <div class="shop-body-root-right">
+              <div class="shop-p-name">
+                <td>12月25日</td>
+              </div>
+              <div class="shop-p-name">
+                <rd>$80.00</rd>
+              </div>
+              <div class="shop-p-num">
+                <td>數量:</td>
+              </div>
+            </div>
+            <div class="shop-p-num">
+              <td> <input type="number" max="10" min="1" value="1"></td>
+            </div>
+            <div class="shop-p-total">
+              <td>$80.00</td>
+            </div>
+            <div class="shop-p-bot">
+              <td> <button class="w3-button w3-black">加入購物車</button></td>
+            </div>
+          </div>
+        </tr>
+      </form>
+    </div>
+
+  </div>
+
+  <!--購物車-->
+  <div class="shop-body">
+    <div class="shop-title">我的購物車</div>
+    <hr>
+    <div class="s-b-t">
+      <form class="register" action="../assets/jsp/memberadd.jsp" method="post">
+        <tr>
+          <div class="shop-body-root">
+            <div class="shop-body-root-left">
+              <td><img src="pic/16.JPG" class="shop-pic"></td>
+            </div>
+            <div class="shop-body-root-right">
+              <div class="shop-p-name">
+                <td>橘</td>
+              </div>
+              <div class="shop-p-name">
+                <rd>$230.00</rd>
+              </div>
+              <div class="shop-p-num">
+                <td>數量:</td>
+              </div>
+            </div>
+            <div class="shop-p-num">
+              <td> <input type="number" max="10" min="1" value="1"></td>
+            </div>
+            <div class="shop-p-total">
+              <td>$230.00</td>
+            </div>
+            <div class="shop-p-bot">
+              <td> <button class="w3-button w3-black">刪除</button></td>
+            </div>
+          </div>
+        </tr>
+      </form>
+      <form class="register" action="../assets/jsp/memberadd.jsp" method="post">
+        <tr>
+          <div class="shop-body-root">
+            <div class="shop-body-root-left">
+              <td><img src="pic/18.JPG" class="shop-pic"></td>
+            </div>
+            <div class="shop-body-root-right">
+              <div class="shop-p-name">
+                <td>12月25日</td>
+              </div>
+              <div class="shop-p-name">
+                <rd>$80.00</rd>
+              </div>
+              <div class="shop-p-num">
+                <td>數量:</td>
+              </div>
+            </div>
+            <div class="shop-p-num">
+              <td> <input type="number" max="10" min="1" value="1"></td>
+            </div>
+            <div class="shop-p-total">
+              <td>$80.00</td>
+            </div>
+            <div class="shop-p-bot">
+              <td> <button class="w3-button w3-black">刪除</button></td>
+            </div>
+          </div>
+        </tr>
+      </form>
+    </div>
+    <div class="shop-b-final">
+      <button class="w3-button w3-black"><a href="check.html" style="text-decoration: none;">結帳</a> <i
+          class="fa fa-shopping-cart"></i></button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-panel w3-padding-16">
+
+    <p>Powered by <a href="" title="W3.CSS" target="_blank" class="w3-hover-text-green">Copyright ©-2020 css</a></p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>商品詳情</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="css/Untitled-7.css">
+  <link rel="stylesheet" href="css/Untitled-8.css">
+</head>
+
+<body>
+  <!-- Navbar (Sits on top) -->
+  <div class="w3-top w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="index.html" class="w3-bar-item w3-button"><b>PT</b> Paper tape </a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="product.html" class="w3-bar-item w3-button">商品</a>
+      <a href="QA.html" class="w3-bar-item w3-button">Q & A</a>
+      <a href="car.html" class="w3-bar-item w3-button">購物車</a>
+      <a href="member.html" class="w3-bar-item w3-button">會員</a>
+      <a href="login.html" class="w3-bar-item w3-button">登入</a>
+      <input type="submit" class="w3-bar-item w3-button" value="登出"></input>
+    </div>
+  </div>
+
+  <!--主體界面-->
+  <div class="pro-body">
+    <div style="display: flex;">
+      <div>
+        <img src="pic/16.JPG" class="pro-img">
+      </div>
+      <div class="pro-p-dir">
+        <div class="pro-name">橘子</div>
+        <div class="pro-price">$200</div>
+        <div class="shop-p-num">
+          <input type="number" max="10" min="1" value="1">
+        </div>
+        <div>
+          <button class="w3-button w3-black">加入購物車</button>
+          <button class="w3-button w3-black"><a href="check.html" style="text-decoration: none;">直接購買</a> <i
+              class="fa fa-shopping-cart"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="product-root">
+      <div class="product-botton">
+        <nav>
+          <a href="#" onclick="clickhere(this)" value="product">商品詳情</a>
+          <a href="#" onclick="clickhere(this)" value="opinion">商品評價</a>
+          <a href="#" onclick="clickhere(this)" value="history">商品留言</a>
+          <a href="#" onclick="clickhere(this)" value="buyer">歷史留言</a>
+        </nav>
+      </div>
+      <div class="r-p">
+        <div id="product" class="r-p-item-1">
+          <div class="pro-size-style">規格：和紙膠帶（特油</div>
+          <div class="pro-size-style"> 尺寸：5cm*100cm/loop</div>
+          <div class="pro-size-style">卷長：10m/roll（自帶離型紙）</div>
+          <div>
+            <img src="pic/11/pic7.jpg">
+          </div>
+          <div class="pro-size-style">注意事项：</div>
+          <div class="pro-size-style-small"> 1：因工厂及材质不同 ，和纸版比PET颜色略微偏淡。</div>
+          <div class="pro-size-style-small"> 2：大年产和纸版本首尾可能会图案不全。</div>
+          <div class="pro-size-style-small">3：PET材质不适合叠加拼贴及打底【可能翘边/如直接在PET上切割再反复粘贴会撕毁表面白墨】慎重考虑</div>
+          <div class="pro-size-style-small"> 4：本次发货时间为25天，请慎重考虑，拍下即默认25天发货。【1分钟内的订单可能发到7天以上，请慎重考虑】</div>
+        </div>
+      </div>
+      <div id="opinion" class="r-p-item">
+        <div class="rp-s">
+          <div class="r-p-star">4.8/5</div>
+          <ul class="r-p-s-5">
+            <li class="r-p-s-5-line"> ★ ★ ★ ★ ★<div class="r-p-s-5-line">(4)</div>
+            </li>
+            <li class="r-p-s-5-line"> ★ ★ ★ ★ ☆<div class="r-p-s-5-line">(1)</div>
+            </li>
+            <li class="r-p-s-5-line"> ★ ★ ★ ☆ ☆<div class="r-p-s-5-line">(0)</div>
+            </li>
+            <li class="r-p-s-5-line"> ★ ★ ☆ ☆ ☆ <div class="r-p-s-5-line">(0)</div>
+            </li>
+            <li class="r-p-s-5-line"> ★ ☆ ☆ ☆ ☆<div class="r-p-s-5-line">(0)</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="history" class="r-p-item">
+        <div id="projects" class="w3-container w3-padding-32">
+          <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">留個言吧</h2>
+          <h4 class="w3-border-bottom w3-border-light-grey w3-padding-16">
+            <form method="POST" action="add.jsp">
+
+              輸入姓氏：<br><input type="text" name="name" style="margin: 0.5%;" /><br>
+
+              留言內容：<br> <textarea type="text" name="content" style="margin: 0.5%;" rows="6" cols="35"></textarea>
+
+
+              <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+              <div class="w3-container">
+
+                <button type="submit" onclick="document.getElementById('id01').style.display='block'"
+                  class="w3-button w3-green w3-large">送出留言</button>
+            </form>
+            <div id="id01" class="w3-modal">
+              <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+
+                <div class="w3-center"><br>
+                  <span onclick="document.getElementById('id01').style.display='none'"
+                    class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Close Modal">×</span>
+                  <img src="pic/00/06.jpg" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+                </div>
+
+                <form class="w3-container" action="/action_page.php">
+                  <div class="w3-section">
+                    <center> <label style="60px"><b>留言成功</b></label></center>
+                    <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">
+                      <a href="index.html" class="w3-bar-item w3-button">返回首頁</a>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+        </div>
+        </h4>
+      </div>
+    </div>
+
+    <div id="buyer" class="r-p-item">
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>歷史留言</h3>
+          <h5>提問時間, <span class="w3-opacity">April 13, 2020</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <p>買家A:<strong>王同學</strong> </p>
+          <img src="pic/avatar.png" alt="q1" style="width:15%" class="w3-padding-16">
+          <p>
+            膠帶好好看！！已經開始用了！</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i
+                  class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo2')"><b>隱藏留言 </b>
+              <span class="w3-tag w3-white">2</span></button></p>
+          <p class="w3-clear"></p>
+
+          <!-- Example of comment field -->
+          <div id="demo2" style="display:none">
+            <div class="w3-row">
+              <hr>
+              <div class="w3-col l2 m3">
+
+              </div>
+              <div class="w3-col l2 m3">
+                <img src="pic/avatar (2).png" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>買家B<span class="w3-opacity w3-medium">May 3, 2020, 6:32 PM</span></h4>
+                <p>有色差嗎？</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="pic/avatar (1).png" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>買家C<span class="w3-opacity w3-medium">May 4, 2020, 17:24 PM</span></h4>
+                <p>你都拿來怎麼貼啊，我也買了，但是不知道怎麼用</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-panel w3-padding-16">
+    <p>Powered by <a href="" title="W3.CSS" target="_blank" class="w3-hover-text-green">Copyright ©-2020 css</a></p>
+  </footer>
+
+  <script>
+    var arraypro = ["product", "opinion", "history", "buyer"]
+
+    function clickhere(x) {
+      arraypro.forEach(e => {
+        document.getElementById(e).style.display = "none";
+
+      });
+
+      var y = x.attributes.value.nodeValue;
+      document.getElementById(y).style.display = "block";
+
+    }
+  </script>
+  <script>
+    document.getElementById("myBtn").click();
+
+    function myFunction(id) {
+      var x = document.getElementById(id);
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+
+    function likeFunction(x) {
+      x.style.fontWeight = "bold";
+      x.innerHTML = "✓ Liked";
+    }
+  </script>
+</body>
+
+</html>
